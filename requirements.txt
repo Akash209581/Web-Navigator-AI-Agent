@@ -1,0 +1,23 @@
+openai>=1.51.0
+python-dotenv>=1.0.1
+playwright>=1.47.0
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+requests>=2.32.3
+# Microphone input on Windows; if this fails to install from PyPI, see README for pipwin instructions
+pyaudio>=0.2.14
+pymongo>=4.10.1
+fastapi
+uvicorn
+langchain
+langgraph
+langchain-openai
+langchain-anthropic
+langchain-text-splitters
+chromadb
+langchain-chroma
+newspaper3k
+PyPDF2
+aiohttp
+nltk
+spacy
