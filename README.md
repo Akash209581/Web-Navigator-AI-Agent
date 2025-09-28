@@ -3,8 +3,10 @@
 # 🌐 Web Navigator Agent — OneCompiler 🚀
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-Automation-45ba4b?logo=playwright&logoColor=white)
+ ![Playwright](https://img.shields.io/badge/Playwright-Automation-45ba4b?logo=playwright&logoColor=white)
 ![LLM](https://img.shields.io/badge/LLM-Ollama-8a2be2)
+[![React](https://img.shields.io/badge/react-61DAFB?logo=react&logoColor=white)](https://reactjs.org)
+[![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ![Voice](https://img.shields.io/badge/Voice-PyAudio%20%7C%20SpeechRecognition-ff9800)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-4db33d?logo=mongodb&logoColor=white)
