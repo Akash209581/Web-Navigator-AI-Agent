@@ -1,49 +1,100 @@
-# Web-Navigator-Agent-One-Compiler
-# Problem Statement Chosen
+🌐 Web-Navigator-Agent-One-Compiler 🚀
+📝 Problem Statement Chosen
+
 HACXPB002 - Web Navigator AI Agent (OneCompiler Hackathon):
-Build an AI Agent that can take natural language instructions and autonomously drive the web on a local computer. The system should combine a locally running LLM (for understanding and planning) with browser automation such as Chrome Headless or a browser in a local VM. Example use: "search for laptops under 50k and list top 5".
+Build an AI Agent that can take natural language instructions and autonomously drive the web on a local computer.
 
-# Detailed Proposal & Prototype Plan Proposal
-We aim to develop an autonomous agent that interprets user instructions, plans web navigation, controls a browser headlessly, extracts relevant information, and returns structured results. The agent merges natural language understanding with browser automation to create a unique Research + Code + Execute workflow.
+👉 Example: "search for laptops under 50k and list top 5"
 
-# Prototype Plan
-Instruction Parsing: Accept natural language instructions and use a local LLM to convert them into actionable steps.
+The system must combine a locally running LLM (for understanding and planning) with browser automation (like Playwright or Chrome Headless).
 
-Web Automation: Use Playwright to open a browser, interact with elements, and navigate websites.
+💡 Detailed Proposal & Prototype Plan
 
-Result Extraction: Scrape relevant data (lists, text, tables) as defined by parsed instructions.
+We aim to create an autonomous research and coding agent that:
 
-Result Presentation: Compile results in a user-friendly structured format and (optionally) execute any extracted code using the OneCompiler API.
+Interprets natural language instructions 🎙️
 
-Integration: Provide a simple UI/CLI to submit queries and view results.
+Plans & executes browser navigation 🖥️
 
-# Features to Be Implemented
-Natural language command input
+Extracts structured information 📊
 
-Local LLM-based instruction parsing & intent detection
+(Optionally) writes & executes code inside online editors 💻
 
-Autonomous web navigation (multi-step, multi-page)
+The result is a Research + Code + Execute workflow powered by voice, AI, and automation.
 
-Data extraction & cleaning (tables, lists, code snippets)
+🛠️ Prototype Plan
+🔎 Instruction Parsing
 
-Structured output generation (JSON,csv)
+Accept natural language commands via voice or text
 
-Basic error handling and recovery for dynamic web pages
+Use a local LLM (Ollama / GPT) for intent detection & planning
 
-Modular design for easy feature expansions
+🌍 Web Automation
 
-# Tech Stack Used
-Programming Language: Python (primary) or Node.js (optional)
+Use Playwright with a controlled Chrome session
 
-Orchestration & Logic: LangChain or custom Python logic
+Navigate sites, click, scroll, solve CAPTCHAs (manual fallback)
 
-Local LLM Host: Ollama 
+📑 Result Extraction
 
-Browser Automation: Playwright 
+Extract lists, tables, text, prices, and code snippets
 
-Data Extraction: BeautifulSoup (Python) 
+Handle special cases (e.g., Amazon laptops with price filter)
 
-UI/Interface: CLI and/or minimal web frontend (Flask)
+🎯 Result Presentation
 
-Version Control: Git, GitHub for collaboration
+Output in structured JSON / CSV
 
+Summaries and optional text-to-speech playback
+
+⚡ Integration
+
+CLI interface + optional lightweight Flask/FastAPI frontend
+
+Streamed updates for research tasks
+
+✨ Features to Be Implemented
+
+✅ Natural language commands (voice + text)
+✅ Local LLM-powered parsing with intent detection
+✅ Autonomous web navigation (multi-step, multi-page)
+✅ Editor support: Monaco, CodeMirror, Ace, contenteditable, textarea
+✅ Data extraction & cleaning (tables, lists, prices, code outputs)
+✅ Structured outputs → JSON, CSV, screenshots
+✅ GPT-assisted code writing with slow typing animation
+✅ Error handling & CAPTCHA support
+✅ Session logging → MongoDB or JSONL
+
+🧰 Tech Stack Used
+
+Programming Language: 🐍 Python (primary)
+
+Orchestration & Logic: LangChain / custom logic
+
+Local LLM Host: 🦙 Ollama (with fallback to OpenAI API)
+
+Browser Automation: 🎭 Playwright
+
+Data Extraction: BeautifulSoup + Playwright selectors
+
+Voice I/O: 🎤 SpeechRecognition, PyAudio, pyttsx3
+
+UI/Interface: CLI + optional 🌐 Flask/FastAPI web UI
+
+Database (optional): 🗄️ MongoDB (or JSONL fallback)
+
+Version Control: Git + GitHub
+
+👥 Collaborators & Team Members
+
+📌 Work Split Among 5 Members:
+
+Maruthi→ Voice I/O (wake word, speech recognition, text-to-speech)
+
+Varshi → Browser automation (Playwright setup, navigation, editor actions)
+
+Abhi → Data extraction (Amazon laptops, tables, JSON/CSV export)
+
+Daniel → Backend API & integration (FastAPI/Flask, SSE streaming, MongoDB logging)
+
+Akash→ UI/CLI & overall testing (command interface, error handling, documentation)
