@@ -151,4 +151,4 @@ Output files (auto-saved in project folder):
 
 ---
 
-Made with ❤️ for the ByteXL Hackathon. 
+Made with ❤️ for OneCompiler and HacXLerate. 
